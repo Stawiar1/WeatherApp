@@ -37,25 +37,25 @@ const getWeather = () => {
         //dodanie odpowiedniego zdjęcia na podstawie ID
         if(status.id >= 200 && status.id < 300){
             weather.textContent = 'Burzowo'
-            photo.setAttribute('src','../img/thunderstorm.png')  
+            photo.setAttribute('src','/img/thunderstorm.png')  
         }else if(status.id >= 300 && status.id < 400){
             weather.textContent = 'Deszczowo'
-            photo.setAttribute('src',"../img/drizzle.png") 
+            photo.setAttribute('src',"/img/drizzle.png") 
         }else if(status.id >= 500 && status.id < 600){
             weather.textContent = 'Mocny Deszcz'
-            photo.setAttribute('src',"../img/rain.png")
+            photo.setAttribute('src',"/img/rain.png")
         }else if(status.id >= 600 && status.id < 700){
             weather.textContent = 'Śnieg'
-            photo.setAttribute('src',"../img/ice.png")
+            photo.setAttribute('src',"/img/ice.png")
         }else if(status.id >= 700 && status.id < 800){
             weather.textContent = 'Mgła'
-            photo.setAttribute('src',"../img/fog.png")
+            photo.setAttribute('src',"/img/fog.png")
         }else if(status.id >= 800 && status.id < 900){
             weather.textContent = 'Pochmurnie'
-            photo.setAttribute('src',"../img/cloud.png")
+            photo.setAttribute('src',"/img/cloud.png")
         }else if(status.id === 800){
             weather.textContent = 'Czyste niebo'
-            photo.setAttribute('src',"../img/sun.png")
+            photo.setAttribute('src',"/img/sun.png")
         }else{
             photo.setAttribute('src', '../img/unknown.png')
         }
